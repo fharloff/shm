@@ -4,7 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>SHM Oppkjøpsradar — shortlist-bygger</title>
+<meta name="generator" content="Oppkjøpsradar v4.3">
+<title>Selskapsradar</title>
 <style>
   :root{
     --paper:#F2F0EA; --card:#FBFAF7; --ink:#17262C; --muted:#5E6B70; --line:#E3DED4;
@@ -88,8 +89,8 @@
 </head>
 <body>
 <header><div class="hbar">
-  <h1>SHM Oppkjøpsradar — shortlist-bygger</h1>
-  <span class="sub">Oppkjøpsradar v4.3 · filtrer kandidatbasen · plukk selskaper · last ned shortlist</span>
+  <h1>Selskapsradar</h1>
+  <span class="sub">v4.3</span>
 </div></header>
 
 <div class="wrap">
@@ -317,7 +318,7 @@
     };
   }
 
-  var LABELS={orgnr:'Org.nr',navn:'Selskap',ai_relevans:'AI-relevans',ai_confidence:'AI-konf.',ai_segment:'Segment',ai_segment_2:'Segment (sek.)',segment:'Segment (NACE)',nace:'NACE',nace_tekst:'NACE-tekst',kommune:'Kommune',ansatte:'Ansatte',stiftet:'Stiftet',oms_mnok:'Oms (MNOK)',dr_mnok:'Driftsres.',margin_pct:'Margin (%)',forretningsmodell:'Forretningsmodell',gjentakende_inntekt:'Gjentak. inntekt',kundesegment:'Kundesegment',verdikjede_overlap:'Felles kunder',oppkjopbarhet:'Oppkjøpbarhet',eier_topp:'Største eier',eier_brreg_topp:'Eier (brreg 2025)',eier_brreg_andel:'Eierandel % (brreg)',eier_brreg_oppkjopbarhet:'Oppkjøpbarhet (brreg)',eier_overstyrt:'Eier overstyrt',eier_andel:'Eierandel %',creditrating:'Rating',soliditet:'Soliditet %',ai_begrunnelse:'Begrunnelse',ai_kjoring:'Kjøring',kilde_url:'Kilde (URL)',kilde_hentet:'Kilde hentet',oppkjop_score:'Oppkjøpbar',fit_score:'Kapabilitet',kundesegment_score:'Kundesegment',segment_tier:'Vekstvektor',total_grunnlag:'Total — grunnlag',total_score:'Total*',kildegrunnlag:'Grunnlag',oppkjop_begrunnelse:'Oppkjøpbarhet — utregning',trigger_flagg:'Hvorfor nå',ulost_andel:'Uløst eierandel %',eiere:'Eiere (gjennomlyst)',daglig_leder:'Daglig leder',styreleder:'Styreleder',aktortype:'Aktørtype',aktortype_2:'Aktørtype (sek.)',malt_rolle:'Målt rolle',kundesegm_verifisert:'Kunde verifisert',standardisering:'Serie/prosjekt',leveranser:'Leveranser (målt)',patenter_aktive:'Aktive patenter',patent_kilde_url:'Patent (URL)'};
+  var LABELS={orgnr:'Org.nr',navn:'Selskap',ai_relevans:'AI-relevans',ai_confidence:'AI-konf.',ai_segment:'Segment',ai_segment_2:'Segment (sek.)',segment:'Segment (NACE)',nace:'NACE',nace_tekst:'NACE-tekst',kommune:'Kommune',ansatte:'Ansatte',stiftet:'Stiftet',oms_mnok:'Oms (MNOK)',dr_mnok:'Driftsres.',margin_pct:'Margin (%)',forretningsmodell:'Forretningsmodell',gjentakende_inntekt:'Gjentak. inntekt',kundesegment:'Kundesegment',verdikjede_overlap:'Felles kunder',oppkjopbarhet:'Eierstruktur',eier_topp:'Største eier',eier_brreg_topp:'Eier (brreg 2025)',eier_brreg_andel:'Eierandel % (brreg)',eier_brreg_oppkjopbarhet:'Eierstruktur (brreg)',eier_overstyrt:'Eier overstyrt',eier_andel:'Eierandel %',creditrating:'Rating',soliditet:'Soliditet %',ai_begrunnelse:'Begrunnelse',ai_kjoring:'Kjøring',kilde_url:'Kilde (URL)',kilde_hentet:'Kilde hentet',oppkjop_score:'Struktur-score',fit_score:'Kapabilitet',kundesegment_score:'Kundesegment',segment_tier:'Vekstvektor',total_grunnlag:'Total — grunnlag',total_score:'Total*',kildegrunnlag:'Grunnlag',oppkjop_begrunnelse:'Eierstruktur — utregning',trigger_flagg:'Merknad',ulost_andel:'Uløst eierandel %',eiere:'Eiere',daglig_leder:'Daglig leder',styreleder:'Styreleder',aktortype:'Aktørtype',aktortype_2:'Aktørtype (sek.)',malt_rolle:'Målt rolle',kundesegm_verifisert:'Kunde verifisert',standardisering:'Serie/prosjekt',leveranser:'Leveranser (målt)',patenter_aktive:'Aktive patenter',patent_kilde_url:'Patent (URL)'};
   function lbl(h){return LABELS[h]||h;}
   // Tabell: beslutningsfelt først, viktigst til venstre. Resten i pop-up.
   var DISPLAY=["navn","total_score","kildegrunnlag","fit_score","kundesegment_score","oppkjop_score","ai_segment","forretningsmodell","verdikjede_overlap","kundesegm_verifisert","aktortype","malt_rolle","oppkjopbarhet","patenter_aktive","kommune","oms_mnok","margin_pct"];
